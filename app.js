@@ -8,20 +8,6 @@ const SeriesRouter = require("./Routers/seriesRouter")
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-
-// router.use("/api/v1/series", router)
-// app.post("/api/v1/series", async (req, res) => {
-//     try {
-//         const series = await mySeriesSchema.create(req.body)
-//         console.log(res.json(series))
-//         res.status(200).json(series)
-
-//     } catch (error) {
-//         res.status(500).json({ message: error.message })
-
-//     }
-// })
-
 app.use("/api/v1/series", SeriesRouter)
 
 

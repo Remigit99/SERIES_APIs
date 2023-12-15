@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const seriesSchema = new mongoose.Schema(
+const seriesSchema = mongoose.Schema(
     {
         title: {
             type: String,
